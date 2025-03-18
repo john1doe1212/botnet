@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="signout" onclick="logout()">Sign Out</button>
+    <button class="upgrade" onclick="showUpgrade()">Upgrade</button>
+    
+    <div class="container">
+        <h1 id="welcomeMessage"></h1>
+        
+        <!-- WARNING MESSAGE -->
+        <div class="warning">
+            <p>WARNING: Sharing accounts will lead to a permanent ban with no refunds</p>
+            <p>ALREADY PAID? DM me at <strong>ja-ha0</strong> on Snapchat</p>
+        </div>
+
+        <!-- Fixed Buttons -->
+        <button class="link-button" onclick="comingSoon()">Ethical Hacking Tools (Coming Soon)</button>
+        <button class="link-button" onclick="window.location.href='gamehacks.html'">Game Hacks</button>
+        <button class="link-button" onclick="comingSoon()">Paid Area (Coming Soon)</button>
+    </div>
+
+    <!-- Upgrade Modal -->
+    <div id="upgradeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideUpgrade()">&times;</span>
+            <h2>Upgrade to Pro</h2>
+            <p>Send 0.0001 BTC to: <code>1NHwEQqHLwW9TsYzZ1V4qP755buok641B5</code></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

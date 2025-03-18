@@ -1,0 +1,103 @@
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 20px;
+    padding: 20px;
+}
+
+.link-button {
+    background: #2a2a2a;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.link-button:hover {
+    background: #3a3a3a;
+}
+
+.signout, .upgrade {
+    position: fixed;
+    top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.signout {
+    right: 20px;
+    background: #ff4444;
+    color: white;
+}
+
+.upgrade {
+    right: 120px;
+    background: #4CAF50;
+    color: white;
+}
+
+.warning {
+    color: #ff4444;
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ff4444;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
